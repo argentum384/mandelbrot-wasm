@@ -1,0 +1,19 @@
+#btnDraw, #btnReset {
+    font-size: larger;
+    padding-left: 10px;
+    padding-right: 10px;
+    margin-bottom: 4px;
+}
+
+body {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.control-container label {
+    display: flex;
+}
+
+.control-container label div {
+    width: 200px;
+}

@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Mandelbrot with WebAssembly</title>
+    <script type="module" src="./js/index.js" async></script> 
+    <link rel="stylesheet" href="./css/index.css"></link>
+  </head>
+
+<div class="canvas-container">
+</div>
+<div class="control-container">
+  <form id="formParams">
+    <div>
+      <button id="btnDraw" type="button">Draw</button>
+      <button id="btnReset" type="button">Reset</button>
+    </div>
+    <label>
+      <div>Canvas width</div>
+      <div>
+        <input id="inputCvWidth" type="number" min="100" max="3840" value="600">
+      </div>
+    </label>
+    <label>
+      <div>Canvas height</div>
+      <div>
+        <input id="inputCvHeight" type="number" min="100" max="2160" value="600">
+      </div>
+    </label>
+    <label>
+      <div>Number of iterations</div>
+      <div>
+        <input id="inputNIterations" type="number" min="1" max="10000" value="300">
+      </div>
+    </label>
+  </form>
+</div>
