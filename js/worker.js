@@ -7,9 +7,6 @@ self.onmessage = e => {
   const imgDataId = Math.random().toString(32).substring(2);
   const imgData = self.imgDataAry[imgDataId] = e.data.imgData;
 
-  const memory = new WebAssembly.Memory({ initial: 10, min: 10, max: 20 });
-  console.log(memory);
-
   wasm.draw(
     e.data.x0.high, e.data.x0.low,
     e.data.y0.high, e.data.y0.low,
