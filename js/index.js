@@ -59,9 +59,9 @@ const recreateCanvas = (width, height) => {
   if (!divCvContainer) {
     return;
   }
-  let child;
-  while ((child = divCvContainer.lastChild)) {
-    divCvContainer.removeChild(child);
+  let oldCv;
+  if ((oldCv = document.getElementById(CANVAS_ID))) {
+    divCvContainer.removeChild(oldCv);
   }
 
   const cv = document.createElement("canvas");
@@ -69,7 +69,7 @@ const recreateCanvas = (width, height) => {
   cv.onclick = onClickCanvas;
   cv.width = width;
   cv.height = height;
-  divCvContainer.appendChild(cv);
+  divCvContainer.insertAdjacentElement("afterbegin", cv);
 
   return cv;
 };
