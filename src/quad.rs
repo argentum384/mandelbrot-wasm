@@ -1,3 +1,6 @@
+// Referred to:
+// https://jglobal.jst.go.jp/detail?JGLOBAL_ID=201502259508147093
+
 use wasm_bindgen::prelude::*;
 use std::ops::{Add, Sub, Mul, Div, Neg};
 
