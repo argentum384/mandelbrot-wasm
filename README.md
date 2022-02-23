@@ -1,6 +1,6 @@
 # mandelbrot-wasm
 
-[https://github.com/argentum384/mandelbrot-wasm](https://github.com/argentum384/mandelbrot-wasm)
+[https://argentum384.github.io/mandelbrot-wasm/](https://argentum384.github.io/mandelbrot-wasm/)
 
 ## Build
 Install [wasm-pack](https://github.com/rustwasm/wasm-pack) and
